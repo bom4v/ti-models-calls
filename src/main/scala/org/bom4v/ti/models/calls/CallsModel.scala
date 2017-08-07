@@ -6,7 +6,7 @@ package org.bom4v.ti.models.calls
 object CallsModel {
 
   /**
-   * CalssEvent
+   * CallEvent
    */
   case class CallEvent(
     timestamp: org.joda.time.LocalDateTime,
