@@ -12,7 +12,7 @@ object CallsModel {
     timestamp: org.joda.time.LocalDateTime,
     eventType: String,
     emitterMSISDN: Option[String],
-    reciverMSISDN: Option[String],
+    receiverMSISDN: Option[String],
     duration: Option[org.joda.time.Duration]
   )
 }
