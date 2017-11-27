@@ -6,7 +6,7 @@ version := "0.0.1"
 
 scalaVersion := "2.11.11"
 
-crossScalaVersions := Seq("2.11.11", "2.12.4")
+crossScalaVersions := Seq("2.11.6", "2.11.11")
 
 checksums in update := Nil
 
