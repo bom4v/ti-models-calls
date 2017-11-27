@@ -106,8 +106,8 @@ object CallsModel {
 
     def apply (str: String): Option[CallEvent] = {
       // Few values have extra double quotes around it
-      val paramArray = str.split(";")
-        .map (param => param.replaceAll ("\"", ""))
+      val paramArray = str.split("^")
+      // .map (param => param.replaceAll ("\"", ""))
 
       scala.util.Try (
 
@@ -152,7 +152,7 @@ object CallsModel {
         )
 
       ) match {
-        case scala.util.Success(student) => Some(student)
+        case scala.util.Success(callEvent) => Some(callEvent)
         case scala.util.Failure(throwable) => {
           println (throwable.getMessage())
           None
