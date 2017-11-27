@@ -1,7 +1,5 @@
 package org.bom4v.ti.models.calls
 
-import scala.Array.canBuildFrom
-
 /**
   * CallsModel 
   */
@@ -20,19 +18,19 @@ object CallsModel {
     recipient: Option[String],
     sequenceNumber: Option[Int],
     callEventsCount: Option[String],
-    eventType: Option[Double],
-    imsi: Option[Int],
-    imei: Option[Int],
-    callEventStartTimeStamp: Option[String],
+    eventType: Option[String],
+    imsi: Option[Long],
+    imei: Option[Long],
+    callEventStartTimeStamp: Option[java.sql.Timestamp],
     utcTimeOffset: Option[Int],
     callEventDuration: Option[Double],
     causeForTermination: Option[Int],
-    accessPointNameNI: Option[Int],
-    accessPointNameOI:  Option[Int],
-    dataVolumeIncoming: Option[Int],
-    dataVolumeOutgoing: Option[Int],
+    accessPointNameNI: Option[String],
+    accessPointNameOI:  Option[String],
+    dataVolumeIncoming: Option[String],
+    dataVolumeOutgoing: Option[String],
     sgsnAddress: Option[String],
-    ggsnAddress: Option[Double],
+    ggsnAddress: Option[String],
     chargingId: Option[String],
     chargeAmount: Option[Double],
     teleServiceCode: Option[Int],
@@ -47,6 +45,7 @@ object CallsModel {
     locationArea: Option[String],
     cellId: Option[String],
     msisdn: Option[String],
-    servingNetwork: Option[String])
+    servingNetwork: Option[String]
+  )
 }
 
