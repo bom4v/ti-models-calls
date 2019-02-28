@@ -2,7 +2,7 @@ Scala Classes Modelling Phone Calls
 ===================================
 
 # References
-* [This GitHub repository](https://github.com/bom4v/ti-data-samples)
+* [This GitHub repository](https://github.com/bom4v/ti-models-calls)
   is a component of the [BOM4V project](https://github.com/bom4v/metamodels),
   aiming at demonstrating end-to-end Spark-based examples
   of Machine Learning (ML) pipelines, for instance

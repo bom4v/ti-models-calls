@@ -8,18 +8,18 @@ organizationHomepage := Some(url("http://github.com/bom4v"))
 
 version := "0.0.1"
 
-homepage := Some(url("https://github.com/bom4v/ti-data-samples"))
+homepage := Some(url("https://github.com/bom4v/ti-models-calls"))
 
 startYear := Some(2019)
 
-description := "Data Samples for BOM for Verticals"
+description := "Business-related object and classes modelling telecom (phone) calls"
 
 licenses += "Apache-2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0")
 
 scmInfo := Some(
   ScmInfo(
-    url("https://github.com/bom4v/ti-data-samples"),
-    "https://github.com/bom4v/ti-data-samples.git"
+    url("https://github.com/bom4v/ti-models-calls"),
+    "https://github.com/bom4v/ti-models-calls.git"
   )
 )
 
