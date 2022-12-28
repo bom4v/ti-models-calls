@@ -34,17 +34,17 @@ developers := List(
 
 //useGpg := true
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.17"
 
-crossScalaVersions := Seq("2.11.8", "2.11.12")
+crossScalaVersions := Seq("2.12.16", "2.12.17")
 
-checksums in update := Nil
+update / checksums  := Nil
 
 libraryDependencies += "com.github.nscala-time" %% "nscala-time" % "2.22.0"
 
-libraryDependencies += "org.specs2" %% "specs2-core" % "4.4.1" % "test"
+libraryDependencies += "org.specs2" %% "specs2-core" % "4.19.0" % "test"
 
-javacOptions in Compile ++= Seq("-source", "1.8",  "-target", "1.8")
+javacOptions in Compile ++= Seq("-source", "11")
 
 scalacOptions ++= Seq("-deprecation", "-feature")
 
@@ -58,6 +58,4 @@ publishTo := {
 }
 
 publishMavenStyle := true
-
-cleanKeepFiles += target.value / "test-reports"
 
